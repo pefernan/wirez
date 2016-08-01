@@ -22,6 +22,7 @@
   <!-- Uberfire dependencies -->
   <inherits name="org.uberfire.UberfireClientAll"/>
   <inherits name="org.uberfire.UberfireBackend"/>
+  <inherits name="org.uberfire.UberfireDocksClient" />
   <inherits name="org.uberfire.client.views.PatternFlyTheme"/>
   <inherits name="org.uberfire.ext.plugin.RuntimePluginClient"/>
   <inherits name="org.uberfire.ext.apps.UberfireAppsClient"/>
@@ -30,9 +31,10 @@
   <inherits name="org.wirez.basicset.WirezBasicSetClient"/>
   <inherits name="org.wirez.bpmn.WirezBpmnClient"/>
 
+
   <!-- Form modeler.-->
   <inherits name="org.wirez.forms.WirezFormsClient"/>
-  <inherits name="org.livespark.formmodeler.renderer.FormModelerDynamicRendererClient"/>
+  <inherits name="org.kie.workbench.common.forms.dynamic.DynamicFormsClient"/>
   <inherits name="org.hibernate.validator.HibernateValidator" />
   <inherits name="org.jboss.errai.validation.Validation" />
   <generate-with class="org.jboss.errai.validation.rebind.ValidatorFactoryGenerator">
@@ -57,7 +59,7 @@
   <set-property name="gwt.logging.logLevel" value="SEVERE"/>
   <!-- To enable logging -->
   <set-property name="gwt.logging.enabled" value="TRUE"/>
-  
+
   <!-- Specify the paths for translatable code -->
   <source path='client'/>
 

@@ -20,7 +20,7 @@ import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.NonPortable;
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
 import org.wirez.basicset.definition.property.Name;
 import org.wirez.basicset.definition.property.Radius;
 import org.wirez.basicset.definition.property.background.BackgroundAndBorderSet;
@@ -51,7 +51,7 @@ public class Polygon {
 
     @Description
     public static final transient String description = "A polygon";
-    
+
     @Property
     @FieldDef( label = "Name", property = "value" )
     @Valid
@@ -84,7 +84,7 @@ public class Polygon {
         public static final String BORDER_COLOR = "#000000";
         public static final Double RADIUS = 50d;
         public static final Double BORDER_SIZE = 1d;
-        
+
         @Override
         public Polygon build() {
             return new Polygon( new Name( "Polygon" ),

@@ -48,38 +48,30 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Forms integration. -->
-
+    <!-- Forms -->
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-crud-component</artifactId>
-      <scope>provided</scope>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-api</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-processing-engine</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-backend</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-api</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-client</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-backend</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-client</artifactId>
-      <scope>provided</scope>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-processing-engine</artifactId>
     </dependency>
 
     <dependency>
@@ -117,7 +109,7 @@
       <artifactId>uberfire-commons-editor-api</artifactId>
       <scope>provided</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>org.uberfire</groupId>
       <artifactId>uberfire-commons-editor-client</artifactId>
@@ -141,7 +133,7 @@
       <artifactId>uberfire-client-api</artifactId>
       <scope>provided</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>org.uberfire</groupId>
       <artifactId>uberfire-workbench-client-views-patternfly</artifactId>

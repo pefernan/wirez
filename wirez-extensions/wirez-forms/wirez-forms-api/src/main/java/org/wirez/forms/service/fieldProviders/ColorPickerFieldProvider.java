@@ -1,12 +1,9 @@
 package org.wirez.forms.service.fieldProviders;
 
-import org.livespark.formmodeler.model.FieldTypeInfo;
-import org.livespark.formmodeler.service.impl.fieldProviders.BasicTypeFieldProvider;
+import org.kie.workbench.common.forms.model.FieldTypeInfo;
+import org.kie.workbench.common.forms.service.impl.fieldProviders.BasicTypeFieldProvider;
 import org.wirez.forms.model.ColorPickerFieldDefinition;
 
-/**
- * @author Pere Fernandez <pefernan@redhat.com>
- */
 public class ColorPickerFieldProvider extends BasicTypeFieldProvider<ColorPickerFieldDefinition> {
     @Override
     public int getPriority() {

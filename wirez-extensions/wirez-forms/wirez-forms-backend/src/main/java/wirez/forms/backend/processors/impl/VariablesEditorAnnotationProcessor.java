@@ -20,8 +20,9 @@ import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
 import org.drools.workbench.models.datamodel.oracle.Annotation;
-import org.livespark.formmodeler.renderer.backend.service.impl.processors.AbstractFieldAnnotationProcessor;
-import org.livespark.formmodeler.renderer.service.TransformerContext;
+import org.kie.workbench.common.forms.dynamic.backend.server.impl.FieldSetting;
+import org.kie.workbench.common.forms.dynamic.backend.server.impl.processors.AbstractFieldAnnotationProcessor;
+import org.kie.workbench.common.forms.dynamic.service.TransformerContext;
 import org.wirez.forms.meta.definition.VariablesEditor;
 import org.wirez.forms.model.VariablesEditorFieldDefinition;
 import org.wirez.forms.service.fieldProviders.VariablesEditorFieldProvider;
@@ -37,6 +38,7 @@ public class VariablesEditorAnnotationProcessor extends AbstractFieldAnnotationP
     @Override
     protected void initField( VariablesEditorFieldDefinition field,
                               Annotation annotation,
+                              FieldSetting fieldSetting,
                               TransformerContext context ) {
         field.setDefaultValue( (String) annotation.getParameters().get( "defaultValue" ) );
     }

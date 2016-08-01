@@ -85,10 +85,10 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Form modeler API. -->
+    <!-- Forms API. -->
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-api</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-api</artifactId>
     </dependency>
 
     <dependency>

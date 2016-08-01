@@ -20,15 +20,13 @@ import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
 import org.drools.workbench.models.datamodel.oracle.Annotation;
-import org.livespark.formmodeler.renderer.backend.service.impl.processors.AbstractFieldAnnotationProcessor;
-import org.livespark.formmodeler.renderer.service.TransformerContext;
+import org.kie.workbench.common.forms.dynamic.backend.server.impl.FieldSetting;
+import org.kie.workbench.common.forms.dynamic.backend.server.impl.processors.AbstractFieldAnnotationProcessor;
+import org.kie.workbench.common.forms.dynamic.service.TransformerContext;
 import org.wirez.forms.meta.definition.ColorPicker;
 import org.wirez.forms.model.ColorPickerFieldDefinition;
 import org.wirez.forms.service.fieldProviders.ColorPickerFieldProvider;
 
-/**
- * @author Pere Fernandez <pefernan@redhat.com>
- */
 @Dependent
 public class ColorPickerAnnotationProcessor extends AbstractFieldAnnotationProcessor<ColorPickerFieldDefinition, ColorPickerFieldProvider> {
 
@@ -38,12 +36,15 @@ public class ColorPickerAnnotationProcessor extends AbstractFieldAnnotationProce
     }
 
     @Override
-    protected Class<ColorPicker> getSupportedAnnotation() {
-        return ColorPicker.class;
+    protected void initField( ColorPickerFieldDefinition field,
+                              Annotation annotation,
+                              FieldSetting fieldSetting,
+                              TransformerContext context ) {
+        field.setDefaultValue( (String) annotation.getParameters().get( "defaultValue") );
     }
 
     @Override
-    protected void initField( ColorPickerFieldDefinition field, Annotation annotation, TransformerContext context ) {
-        field.setDefaultValue( (String) annotation.getParameters().get( "defaultValue") );
+    protected Class<ColorPicker> getSupportedAnnotation() {
+        return ColorPicker.class;
     }
 }

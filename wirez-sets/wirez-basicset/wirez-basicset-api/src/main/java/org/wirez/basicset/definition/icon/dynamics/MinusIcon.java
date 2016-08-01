@@ -20,7 +20,7 @@ import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.NonPortable;
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
 import org.wirez.basicset.definition.Categories;
 import org.wirez.basicset.definition.property.Height;
 import org.wirez.basicset.definition.property.Name;
@@ -52,7 +52,7 @@ public class MinusIcon implements DynamicIcon {
 
     @Description
     public static final transient String description = "Minus Icon";
-    
+
     @Property
     @FieldDef( label = "Name", property = "value" )
     @Valid

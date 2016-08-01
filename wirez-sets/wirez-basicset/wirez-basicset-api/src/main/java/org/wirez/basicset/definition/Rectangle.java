@@ -20,7 +20,7 @@ import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.NonPortable;
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
 import org.wirez.basicset.definition.property.Height;
 import org.wirez.basicset.definition.property.Name;
 import org.wirez.basicset.definition.property.Width;
@@ -52,7 +52,7 @@ public class Rectangle {
 
     @Description
     public static final transient String description = "A rectangle";
-    
+
     @Property
     @FieldDef( label = "Name", property = "value" )
     @Valid
@@ -77,7 +77,7 @@ public class Rectangle {
     @FieldDef( label = "Height", property = "value" )
     @Valid
     private Height height;
-    
+
     @Labels
     private final Set<String> labels = new HashSet<String>() {{
         add( "all" );
@@ -91,7 +91,7 @@ public class Rectangle {
         public static final Double WIDTH = 150d;
         public static final Double HEIGHT = 100d;
         public static final Double BORDER_SIZE = 1d;
-        
+
         @Override
         public Rectangle build() {
             return new Rectangle( new Name( "Rectangle" ),
@@ -100,11 +100,11 @@ public class Rectangle {
                     new Width( WIDTH ),
                     new Height( HEIGHT ) );
         }
-        
+
     }
 
     public Rectangle() {
-        
+
     }
 
     public Rectangle(@MapsTo("name") Name name,

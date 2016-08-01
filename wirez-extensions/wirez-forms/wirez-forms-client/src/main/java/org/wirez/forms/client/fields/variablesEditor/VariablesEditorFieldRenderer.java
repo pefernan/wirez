@@ -22,7 +22,7 @@ import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
 import com.google.gwt.user.client.ui.IsWidget;
-import org.livespark.formmodeler.renderer.client.rendering.FieldRenderer;
+import org.kie.workbench.common.forms.dynamic.client.rendering.FieldRenderer;
 import org.wirez.forms.client.fields.model.Variable;
 import org.wirez.forms.client.fields.model.VariableRow;
 import org.wirez.forms.client.fields.util.StringUtils;

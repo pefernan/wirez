@@ -3,7 +3,7 @@ package org.wirez.basicset.definition.property.background;
 import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
 import org.wirez.core.definition.annotation.Name;
 import org.wirez.core.definition.annotation.propertyset.Property;
 import org.wirez.core.definition.annotation.propertyset.PropertySet;

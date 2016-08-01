@@ -18,8 +18,8 @@ package org.wirez.bpmn.definition;
 
 import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.NonPortable;
-import org.livespark.formmodeler.metaModel.FieldDef;
-import org.livespark.formmodeler.metaModel.Slider;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.Slider;
 import org.wirez.bpmn.definition.property.Height;
 import org.wirez.bpmn.definition.property.Width;
 import org.wirez.bpmn.definition.property.background.BackgroundSet;

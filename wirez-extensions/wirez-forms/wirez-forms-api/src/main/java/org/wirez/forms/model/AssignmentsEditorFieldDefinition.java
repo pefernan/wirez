@@ -20,8 +20,8 @@ import javax.validation.constraints.Pattern;
 
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
-import org.livespark.formmodeler.model.FieldDefinition;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
+import org.kie.workbench.common.forms.model.FieldDefinition;
 import org.wirez.forms.meta.definition.AssignmentsEditor;
 
 @Portable

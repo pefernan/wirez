@@ -20,7 +20,7 @@ import org.jboss.errai.common.client.api.annotations.MapsTo;
 import org.jboss.errai.common.client.api.annotations.NonPortable;
 import org.jboss.errai.common.client.api.annotations.Portable;
 import org.jboss.errai.databinding.client.api.Bindable;
-import org.livespark.formmodeler.metaModel.FieldDef;
+import org.kie.workbench.common.forms.metaModel.FieldDef;
 import org.wirez.basicset.definition.property.IconType;
 import org.wirez.basicset.definition.property.Name;
 import org.wirez.basicset.definition.property.Radius;
@@ -52,7 +52,7 @@ public class PolygonWithIcon {
 
     @Description
     public static final transient String description = "A polygon with an icon";
-    
+
     @Property
     @FieldDef( label = "Name", property = "value" )
     @Valid

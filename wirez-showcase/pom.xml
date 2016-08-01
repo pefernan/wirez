@@ -38,18 +38,18 @@
   <dependencies>
 
     <dependency>
-        <groupId>org.jboss.xnio</groupId>
-        <artifactId>xnio-api</artifactId>
+      <groupId>org.jboss.xnio</groupId>
+      <artifactId>xnio-api</artifactId>
     </dependency>
 
     <dependency>
-        <groupId>org.uberfire</groupId>
-        <artifactId>uberfire-widgets-service-backend</artifactId>
+      <groupId>org.uberfire</groupId>
+      <artifactId>uberfire-widgets-service-backend</artifactId>
     </dependency>
 
     <dependency>
-        <groupId>org.uberfire</groupId>
-        <artifactId>uberfire-backend-api</artifactId>
+      <groupId>org.uberfire</groupId>
+      <artifactId>uberfire-backend-api</artifactId>
     </dependency>
 
     <!-- dependencies added because of new illegal transitive dependency check -->
@@ -228,6 +228,12 @@
     <dependency>
       <groupId>org.uberfire</groupId>
       <artifactId>uberfire-widgets-table</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.uberfire</groupId>
+      <artifactId>uberfire-simple-docks-client</artifactId>
       <scope>provided</scope>
     </dependency>
 
@@ -442,43 +448,44 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Form modeler. -->
+    <!-- Forms -->
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-crud-component</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-api</artifactId>
+      <classifier>sources</classifier>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-api</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-api</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-processing-engine</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-backend</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-dynamic-forms-client</artifactId>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-api</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-backend</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-dynamic-renderer-client</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-processing-engine</artifactId>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.livespark</groupId>
-      <artifactId>livespark-form-modeler-rendering-api</artifactId>
+      <groupId>org.kie.workbench.forms</groupId>
+      <artifactId>kie-wb-common-forms-common-widgets</artifactId>
       <scope>provided</scope>
     </dependency>
 
@@ -651,7 +658,6 @@
           <disableCastChecking>true</disableCastChecking>
           <runTarget>wirez.html</runTarget>
           <hostedWebapp>src/main/webapp</hostedWebapp>
-          <gwtSdkFirstInClasspath>false</gwtSdkFirstInClasspath>
           <logLevel>INFO</logLevel>
 
           <compileSourcesArtifacts>
@@ -686,14 +692,13 @@
             <compileSourcesArtifact>org.uberfire:uberfire-widgets-properties-editor-client</compileSourcesArtifact>
             <compileSourcesArtifact>org.uberfire:uberfire-widgets-service-api</compileSourcesArtifact>
 
-            <!-- Form modeler. -->
-            <compileSourcesArtifact>org.livespark:livespark-crud-component</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-api</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-processing-engine</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-rendering-api</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-dynamic-renderer-api</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-dynamic-renderer-client</compileSourcesArtifact>
-            <compileSourcesArtifact>org.livespark:livespark-form-modeler-rendering-api</compileSourcesArtifact>
+            <!-- Forms. -->
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-forms-api</compileSourcesArtifact>
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-forms-processing-engine</compileSourcesArtifact>
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-forms-common-widgets</compileSourcesArtifact>
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-forms-crud-component</compileSourcesArtifact>
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-dynamic-forms-api</compileSourcesArtifact>
+            <compileSourcesArtifact>org.kie.workbench.forms:kie-wb-common-dynamic-forms-client</compileSourcesArtifact>
 
             <!-- Wirez -->
             <compileSourcesArtifact>org.wirez:wirez-core-api</compileSourcesArtifact>
@@ -735,9 +740,6 @@
           </execution>
         </executions>
       </plugin>
-
-
-
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <configuration>

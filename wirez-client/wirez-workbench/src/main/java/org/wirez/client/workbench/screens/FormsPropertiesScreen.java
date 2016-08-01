@@ -22,7 +22,7 @@ import org.jboss.errai.databinding.client.BindableProxy;
 import org.jboss.errai.databinding.client.BindableProxyFactory;
 import org.jboss.errai.databinding.client.HasProperties;
 import org.jboss.errai.databinding.client.api.DataBinder;
-import org.livespark.formmodeler.renderer.client.DynamicFormRenderer;
+import org.kie.workbench.common.forms.dynamic.client.DynamicFormRenderer;
 import org.uberfire.client.annotations.*;
 import org.uberfire.client.mvp.PlaceManager;
 import org.uberfire.client.workbench.events.ChangeTitleWidgetEvent;

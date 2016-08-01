@@ -16,8 +16,8 @@
 
 package org.wirez.forms.service.fieldProviders;
 
-import org.livespark.formmodeler.model.FieldTypeInfo;
-import org.livespark.formmodeler.service.impl.fieldProviders.BasicTypeFieldProvider;
+import org.kie.workbench.common.forms.model.FieldTypeInfo;
+import org.kie.workbench.common.forms.service.impl.fieldProviders.BasicTypeFieldProvider;
 import org.wirez.forms.model.VariablesEditorFieldDefinition;
 
 public class VariablesEditorFieldProvider extends BasicTypeFieldProvider<VariablesEditorFieldDefinition> {
